@@ -1,6 +1,8 @@
 # Image_segmentation Project
 The goal of this project was to create a decoder layer for an existing object recognition neural network.
-The data used was was pascal VOC, which includes images and segmentations masks for 21 different categories.
+
+The data used was was pascal VOC, which includes images and segmentations masks for 21 different categories, since these images are of varying size, the main data preprocessing was forcing them all to be 256 by 256.
+
 The libraries used were pytorch, matplotlib, numpy and torchvision.
 I used Claude Sonnet to generate a lot of the actual code.
 I ended up testing two different decoder layers, one using bilinear upsampling with convolutions, and another that uses purely transposed convolutions.
